@@ -1,0 +1,50 @@
+.header{
+    display:flex;
+    justify-content:flex-end;
+    text-decoration: none;
+    align-items:stretch;
+
+}
+.header div {
+    padding:1em;
+    flex-grow:0;
+}
+.header a {
+    text-decoration: none;
+}
+.header__logo {
+    flex-grow: 8    ;
+    text-align: left;
+}
+.header__logo img {
+    max-width:100px;
+    width:100px;
+}
+.header__logo img:hover {
+    animation: header__logo--spin 1s
+}
+.header__button--contact {
+    background-color: green;
+}
+.header__sidenav {
+    height:100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    right:0;
+    background-color: inherit;
+    overflow-x: disabled;
+    & a{
+        display: block;
+        padding:2em;
+    }
+}
+@keyframes header__logo--spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

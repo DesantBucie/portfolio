@@ -1,14 +1,11 @@
+import './AboutMe.scss';
+
 const AboutMe = () => {
     return (
         <div className="about-me" id="about-me">
             <h1>Hello, I'm Jakub</h1>
-            <a href="https://github.com/DesantBucie">
-                {/*<img 
-                src="https://img.shields.io/badge/change%20da%20world-my%20final%20message-green?style=flat-square&/"
-                alt="My Shield"/>*/}
-            </a>
 
-            <p>I'm aspiring programmer intrested in OSes and motorsport.</p>
+            <h2>I'm aspiring programmer intrested in OSes and motorsport.</h2>
 
             <ul>
                 <li>Main machine - Macbook Pro 16,3</li>
@@ -21,7 +18,7 @@ const AboutMe = () => {
                 src="https://github-readme-stats.vercel.app/api?username=DesantBucie&theme=outrun&count_private=true&include_all_commits=true"
                 alt="github stats"/>
             </a>
-            <p>Check out my projects on github! I hope you find them somehow useful. </p>
+            <h3>Check out my projects below! I hope you find them somehow useful. </h3>
 
         </div>
     );

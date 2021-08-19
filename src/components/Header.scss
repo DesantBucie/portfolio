@@ -3,13 +3,13 @@
     justify-content:flex-end;
     text-decoration: none;
     align-items:stretch;
-
 }
 .header div {
     flex-grow:0;
 }
 .header button {
     margin:1em;
+    font-size: 12pt;
 }
 .header a {
     text-decoration: none;
@@ -17,6 +17,7 @@
 .header__logo {
     flex-grow: 8    ;
     text-align: left;
+    z-index: 1;
 }
 .header__logo img {
     max-width:100px;
@@ -43,6 +44,26 @@
         display: block;
         transition: 0.3s;
     }
+}
+.header__tilt {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+}
+
+.header__tilt svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 128px;
+    transform: rotateY(180deg);
+}
+
+.header__tilt .header__shape-fill {
+    fill: #ffffff;
 }
 @media only screen and (min-width:750px) {
 	.header__sidenav {

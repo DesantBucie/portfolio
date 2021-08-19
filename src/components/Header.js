@@ -42,7 +42,7 @@ const Header = (props) => {
         return (
             <div className="header">
                     <section className="header__logo"><img src={logo} alt="logo"/></section>
-                    <div><Button onClick={Darkmode} color="primary"><Brightness4Icon/></Button></div>
+                    <div><Button onClick={Darkmode} color="primary"><Brightness4Icon/>INOP</Button></div>
                     <div><a href="#about-me"><Button variant="contained" color="primary">About me</Button></a></div>
                     <div><a href="#my-projects"><Button variant="contained" color="primary">My projects</Button></a></div>
                     <div><a href="#contact"><Button style={{backgroundColor: "#21b6ae",}}variant="contained">Contact</Button></a></div>

@@ -1,3 +1,7 @@
+.my-projects {
+    background-color:#21b6ae;
+    padding-top: 10em;
+}
 .my-projects__image {
 	max-width: 100%;
 	margin: 0 auto;
@@ -7,7 +11,27 @@
     border-radius: 10px;
     padding: 5em 3em;
     margin-top: 2em;
+    font-size: 14pt;
+    background-color: white;
 }
 .my-projects h3 { 
     font-size: 3em;
 } 
+.my-projects__triangle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.my-projects__triangle svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 128px;
+}
+
+.my-projects__triangle .my-projects__shape-fill {
+    fill:#3f51b5;
+}

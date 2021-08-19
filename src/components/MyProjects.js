@@ -8,8 +8,15 @@ import antila from './media/antila.png'
 import './MyProjects.scss';
 
 const MyProjects = () => {
+    
     return (
-        <div className="my-projects" id="my-projects">
+        <div>
+            <div className="my-projects__triangle">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="my-projects__shape-fill"></path>
+                </svg>
+            </div>
+            <div className="my-projects" id="my-projects">
             <h2>My projects</h2>
             <section className="my-projects__project">
             <Grid
@@ -86,6 +93,7 @@ const MyProjects = () => {
 
             </Grid>
             </section>
+        </div>
         </div>
     );
 }

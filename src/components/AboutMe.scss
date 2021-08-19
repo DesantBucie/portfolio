@@ -1,3 +1,31 @@
-.about-me h2 {
-    font-size:2em;
+.about-me {
+    background-color: #3f51b5;
+    text-align: center;
+    padding-top: 8em;
+    & h2 {
+        font-size:2em;
+    }
+    & h3 {
+        padding-top: 2em;
+    }
+    &__tilt {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        z-index: 1;
+    }
+    
+    &__tilt svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 128px;
+        transform: rotateY(180deg);
+    }
+    
+    &__tilt &__shape-fill {
+        fill: #ffffff;
+    }
 }

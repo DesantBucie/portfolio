@@ -1,5 +1,6 @@
 .contact { 
-    padding-top: 4em;
+    padding-top: 10em;
+    padding-bottom: 5em;
     & h2 {
         font-size: 4em;
     }
@@ -30,5 +31,10 @@
     
     &__triangle &__shape-fill {
         fill: #21b6ae;
+    }
+}
+.darkmode {
+    .contact__triangle .contact__shape-fill {
+        fill :#0a615d;
     }
 }

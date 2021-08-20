@@ -1,7 +1,8 @@
 .about-me {
-    background-color: #3f51b5;
+    background-color: rgb(223, 223, 27);
     text-align: center;
-    padding-top: 8em;
+    padding-top: 12em;
+    padding-bottom: 5em;
     & h2 {
         font-size:2em;
     }
@@ -11,7 +12,7 @@
     &__tilt {
         position: absolute;
         left: 0;
-        width: 100%;
+        width: 101%;
         overflow: hidden;
         line-height: 0;
         z-index: 1;
@@ -27,5 +28,14 @@
     
     &__tilt &__shape-fill {
         fill: #ffffff;
+        transition: 0.5s;
     }
+}
+.darkmode {
+        .about-me {
+            background-color: #171d3f;
+        }
+        .about-me__tilt .about-me__shape-fill {
+            fill: #111;
+        }
 }

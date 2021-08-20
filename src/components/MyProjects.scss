@@ -1,6 +1,9 @@
 .my-projects {
     background-color:#21b6ae;
     padding-top: 10em;
+    & h2 {
+        padding-bottom:2em;
+    }
 }
 .my-projects__image {
 	max-width: 100%;
@@ -33,5 +36,16 @@
 }
 
 .my-projects__triangle .my-projects__shape-fill {
-    fill:#3f51b5;
+    fill:rgb(223, 223, 27)
+}
+.darkmode {
+    .my-projects {
+        background-color: #0a615d;
+        &__project {
+            background-color: #222222;
+        }
+    }
+    .my-projects__triangle .my-projects__shape-fill {
+        fill: #171d3f;
+    }
 }

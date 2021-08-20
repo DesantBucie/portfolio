@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div className="about-me" id="about-me">
             <h1>Hello, I'm Jakub</h1>
 
-            <h2>I'm aspiring programmer intrested in OSes and motorsport.</h2>
+            <h2>I'm aspiring programmer intrested in low level programming and motorsports.</h2>
 
             <a href="https://github.com/DesantBucie">
                 <img 

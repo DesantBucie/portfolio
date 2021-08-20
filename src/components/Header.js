@@ -68,12 +68,12 @@ const Header = (props) => {
     else {
         return (
             <div className="header">
-                {/*<Grid
+                <Grid
                     container
                     direction="row"
                     justifyContent="center"
                     alignItems="center"
-                >*/}
+                >
                     <section className="header__logo">
                         <img src={logo} alt="logo" />
                     </section>
@@ -91,7 +91,7 @@ const Header = (props) => {
                             <Button color="primary" variant="contained">Contact</Button>
                         </a>
                     </div>
-                {/*</Grid>*/}
+                </Grid>
             </div>
         );
     }

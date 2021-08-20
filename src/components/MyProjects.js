@@ -45,7 +45,7 @@ const MyProjects = () => {
             alignItems="center"
             direction="row-reverse">
                 <Grid container item sm={12} md={6}>
-                    <h3><a href="https://gitlab.com/DesantBucie/paleofetch-mac">Paleofetch-BSD</a></h3> 
+                    <h3><a href="https://gitlab.com/DesantBucie/paleofetch-mac">Paleofetch</a></h3> 
                     <p>
                         is a fork of a copy of neofetch written in C. Currently works only on mac, I'll try to bring it on the BSDs and Solaris family. It is on macOS even <b>20 times faster</b> than neofetch. Most of code is new.
                     </p>

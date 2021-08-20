@@ -1,5 +1,6 @@
 .my-projects {
     background-color:#21b6ae;
+    transition: .5s;
     padding-top: 10em;
     & h2 {
         padding-bottom:2em;
@@ -36,13 +37,22 @@
 }
 
 .my-projects__triangle .my-projects__shape-fill {
-    fill:rgb(223, 223, 27)
+    fill:rgb(223, 223, 27);
+    transition: .5s;
+}
+@media only screen and (max-width:850px) {
+	.my-projects__project {
+        padding: 3em 1em;
+        margin-top: 2em;
+        font-size: 14pt;
+        background-color: white;
+    }
 }
 .darkmode {
     .my-projects {
         background-color: #0a615d;
         &__project {
-            background-color: #222222;
+            background-color: rgb(42, 48, 47);
         }
     }
     .my-projects__triangle .my-projects__shape-fill {

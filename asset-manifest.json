@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.82ddc058.chunk.css",
+    "main.js": "/portfolio/static/js/main.ccbf90fa.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ccbf90fa.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.b1d5f515.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b1d5f515.js.map",
+    "static/js/2.60966f3d.chunk.js": "/portfolio/static/js/2.60966f3d.chunk.js",
+    "static/js/2.60966f3d.chunk.js.map": "/portfolio/static/js/2.60966f3d.chunk.js.map",
+    "static/js/3.881a3734.chunk.js": "/portfolio/static/js/3.881a3734.chunk.js",
+    "static/js/3.881a3734.chunk.js.map": "/portfolio/static/js/3.881a3734.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.82ddc058.chunk.css.map": "/portfolio/static/css/main.82ddc058.chunk.css.map",
+    "static/js/2.60966f3d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.60966f3d.chunk.js.LICENSE.txt",
+    "static/media/antila.c3b70bf0.png": "/portfolio/static/media/antila.c3b70bf0.png",
+    "static/media/easy-vim.37885f40.gif": "/portfolio/static/media/easy-vim.37885f40.gif",
+    "static/media/korny.ba9044e4.png": "/portfolio/static/media/korny.ba9044e4.png",
+    "static/media/logo.7e8086fc.svg": "/portfolio/static/media/logo.7e8086fc.svg",
+    "static/media/paleofetch.54e7b603.gif": "/portfolio/static/media/paleofetch.54e7b603.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1d5f515.js",
+    "static/js/2.60966f3d.chunk.js",
+    "static/css/main.82ddc058.chunk.css",
+    "static/js/main.ccbf90fa.chunk.js"
+  ]
+}

@@ -8,7 +8,7 @@ const AboutMe = () => {
                         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="about-me__shape-fill"></path>
                     </svg>
                 </div>
-        <div className="about-me" id="about-me">
+        <section className="about-me" id="about-me">
             <h1>Hello, I'm Jakub</h1>
 
             <h2>I'm aspiring programmer intrested in low level programming and motorsports.</h2>
@@ -19,7 +19,7 @@ const AboutMe = () => {
                 alt="github stats"/>
             </a>
             <h3>Check out my projects below! I hope you find them somehow useful. </h3>
-        </div>
+        </section>
         </div>
     );
 }

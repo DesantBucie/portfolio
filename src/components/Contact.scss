@@ -1,6 +1,9 @@
+@import './Colors.scss';
+
 .contact { 
-    padding-top: 10em;
+    padding-top: 12em;
     padding-bottom: 5em;
+    background: $lightmode_yellow;
     & h2 {
         font-size: 4em;
     }
@@ -16,6 +19,7 @@
         width: 100%;
         overflow: hidden;
         line-height: 0;
+        background: $lightmode_yellow;
         &--bottom {
             transform: rotate(180deg);
         }
@@ -30,11 +34,17 @@
     }
     
     &__triangle &__shape-fill {
-        fill: #21b6ae;
+        fill: $lightmode_lightblue;
     }
 }
 .darkmode {
     .contact__triangle .contact__shape-fill {
-        fill :#0a615d;
+        fill :$darkmode_marine;
+    }
+    .contact {
+        background: $darkmode_darkblue;
+        &__triangle {
+            background: $darkmode_darkblue;
+        }
     }
 }

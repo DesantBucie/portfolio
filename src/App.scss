@@ -1,3 +1,5 @@
+@import './components/Colors.scss';
+
 body {
 	margin: 0 auto;
 	transition: 0.5s;
@@ -26,42 +28,22 @@ h3{
 img {
 	max-width: 100%;
 }
-
 .app {
 	margin: 0 auto;
-}
-
-.app__logo {
-  	height: 40vmin;
-  	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  	.app__logo {
-    	animation: app__logo--spin infinite 20s linear;
-  	}
-}
-
-.app__header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.app__link {
-  	color: #61dafb;
 }
 .my-projects, .contact, .about-me, .header,.footer{
 	padding:1em;
 	padding-left: 10%;
 	padding-right: 10%;
 }
-
+.darkmode {
+	background:$darkmode_background;
+	color:$darkmode_color;
+	& a {
+		color:$darkmode_color;
+		text-decoration: underline;
+	}
+}
 @media only screen and (max-width:850px) {
 	.my-projects, .contact, .about-me, .header,.footer{
 		padding:1em;
@@ -77,11 +59,8 @@ img {
 		transform: rotate(360deg);
 	}
 }
-.darkmode {
-	background:#111;
-	color:#eee;
-	& a {
-		color:#eee;
-		text-decoration: underline;
+@media (prefers-reduced-motion: no-preference) {
+	.app__logo {
+	  animation: app__logo--spin infinite 20s linear;
 	}
 }

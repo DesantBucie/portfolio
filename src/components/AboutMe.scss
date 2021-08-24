@@ -1,5 +1,7 @@
+@import "./Colors.scss";
+
 .about-me {
-    background-color: rgb(223, 223, 27);
+    background-color: $lightmode_yellow;
     transition: 0.5s;
     text-align: center;
     padding-top: 12em;
@@ -34,7 +36,7 @@
 }
 .darkmode {
         .about-me {
-            background-color: #171d3f;
+            background-color: $darkmode_darkblue;
         }
         .about-me__tilt .about-me__shape-fill {
             fill: #111;

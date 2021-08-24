@@ -1,44 +1,32 @@
-.header button {
+@import './Colors.scss';
+
+.header { 
+    & button {
     margin:1em;
     font-size: 12pt;
-}
-.header a {
-    text-decoration: none;
-}
-.header__logo {
-    flex-grow: 8    ;
-    text-align: left;
-}
-.header__logo img {
-    max-width:80px;
-    width:60px;
-    padding-left:1em;
-}
-.header__logo img:hover {
-    animation: header__logo--spin 1s
-}
-.header__button--contact {
-    background-color: green;
-}
-.header__sidenav {
-    height:100%;
-    width:0;
-    position: fixed;
-    z-index: 2;
-    top:0;
-    right:0;
-    background-color:#21b6ae;
-    overflow-x: disabled;
-    transition: 0.5s;
-    & a{
-        padding:1em;
-        display: block;
-        transition: 0.3s;
+    }
+    & a {
+        text-decoration: none;
+    }
+    &__logo {
+        flex-grow: 8;
+        text-align: left;
+
+        & img {
+            max-width:80px;
+            width:60px;
+            padding-left:1em;
+
+            &:hover {
+                animation: header__logo--spin 1s  
+            }
+        }
     }
 }
 .darkmode {
     & .header__logo img {
         filter: invert(59%) sepia(12%) saturate(2484%) hue-rotate(128deg) brightness(99%) contrast(90%);
+        //code from website colouring svgs
     }
 }
 @media only screen and (min-width:750px) {

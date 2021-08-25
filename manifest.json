@@ -27,6 +27,6 @@
   "scope": "https://desantbucie.github.io/portfolio/",
   "start_url": "https://desantbucie.github.io/portfolio/",
   "display": "standalone",
-  "theme_color": "#fff",
+  "theme_color": "#000",
   "background_color": "#000"
 }

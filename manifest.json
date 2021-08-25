@@ -1,6 +1,6 @@
 {
   "short_name": "Portfolio",
-  "name": "Jakub Truszkowski's Portfolio",
+  "name": "Jakub's Truszkowski Portfolio",
   "icons": [
     {
       "src": "favicon.svg",
@@ -16,10 +16,17 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "maskable_icon.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "scope": "/",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#000000"
+  "theme_color": "#fff",
+  "background_color": "#fff"
 }

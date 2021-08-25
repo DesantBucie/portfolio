@@ -24,8 +24,8 @@
       "purpose": "any maskable"
     }
   ],
-  "scope": "/portfolio/",
-  "start_url": "/portfolio/index.html",
+  "scope": "https://desantbucie.github.io/portfolio/",
+  "start_url": "https://desantbucie.github.io/portfolio/",
   "display": "standalone",
   "theme_color": "#fff",
   "background_color": "#000"

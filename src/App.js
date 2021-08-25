@@ -7,12 +7,12 @@ import Contact from './components/Contact';
 const App = () => {
   return (
     <div className="app">
-      <Header />
-      <main>
-        <AboutMe />
-        <MyProjects />
-        <Contact />
-      </main>
+      	<Header />
+      	<main>
+        	<AboutMe />
+        	<MyProjects />
+        	<Contact />
+      	</main>
     </div>
   );
 }

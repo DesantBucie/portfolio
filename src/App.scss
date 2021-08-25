@@ -1,33 +1,4 @@
 @import './components/Colors.scss';
-
-body {
-	margin: 0 auto;
-	transition: 0.5s;
-}
-a {
-  	text-decoration: underline;
-	color:black;
-}
-ul {
-  	list-style-type:circle;
-}
-h1,h2,h3 {
-	text-align: center;
-	font-weight: 400;
-}
-h2 {
-	font-size: 3em;
-}
-h1 {
-	font-size:4em;
-}
-h3{
-	margin-block-start: 0em;
-    margin-block-end: 1em;
-}
-img {
-	max-width: 100%;
-}
 .app {
 	margin: 0 auto;
 }
@@ -45,7 +16,7 @@ img {
 	}
 }
 @media only screen and (max-width:850px) {
-	.my-projects, .contact, .about-me, .header,.footer{
+	.my-projects, .contact, .about-me, .header, .footer{
 		padding:1em;
 		padding-left: .5em;
 		padding-right: .5em;

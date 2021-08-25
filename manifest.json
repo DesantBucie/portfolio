@@ -25,7 +25,7 @@
     }
   ],
   "scope": "/portfolio/",
-  "start_url": "/portfolio/",
+  "start_url": "/portfolio",
   "display": "standalone",
   "theme_color": "#fff",
   "background_color": "#fff"

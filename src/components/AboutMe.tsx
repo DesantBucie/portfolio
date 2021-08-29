@@ -1,6 +1,6 @@
 import './AboutMe.scss';
 
-const AboutMe = () => {
+const AboutMe: React.FC = () => {
     return (
         <div>
             <div className="about-me__tilt">

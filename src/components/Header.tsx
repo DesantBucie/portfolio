@@ -9,10 +9,10 @@ import Button from '@material-ui/core/Button';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
 
-const Header = () => {
+const Header:React.FC = () => {
 
-    const [width, setWidth] = useState(window.innerWidth);
-    const [icon, setIcon] = useState(document.body.classList.contains("darkmode"));
+    const [width, setWidth] = useState<number>(window.innerWidth);
+    const [icon, setIcon] = useState<Boolean>(document.body.classList.contains("darkmode"));
     
     const Darkmode = () => {
         document.body.classList.toggle('darkmode');

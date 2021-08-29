@@ -3,8 +3,9 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import MyProjects from'./components/MyProjects';
 import Contact from './components/Contact';
+import React from 'react';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div className="app">
       	<Header />

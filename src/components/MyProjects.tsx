@@ -7,7 +7,7 @@ import antila from './media/antila.png'
 
 import './MyProjects.scss';
 
-const MyProjects = () => {
+const MyProjects: React.FC = () => {
 
     return (
         <div>

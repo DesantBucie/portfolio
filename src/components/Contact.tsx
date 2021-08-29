@@ -1,6 +1,6 @@
 import './Contact.scss';
 
-const Contact = () => {
+const Contact: React.FC = () => {
     return (
         <div>
             <div className="contact__triangle">

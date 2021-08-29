@@ -4,12 +4,12 @@ import Button from '@material-ui/core/Button';
 
 import './Bothnav.scss';
 
-const MobileNav = () => {
+const MobileNav: React.FC = () => {
     const OpenSidebar = async () => {
-        document.getElementById("nav__sidenav").style.width = '300px';
+        document.getElementById("nav__sidenav")!.style.width = '300px';
     }
     const CloseSidebar = async () => {
-        document.getElementById("nav__sidenav").style.width = '0';
+        document.getElementById("nav__sidenav")!.style.width = '0';
     }
     return (
                 <nav className="nav">

@@ -1,7 +1,8 @@
 import Button from '@material-ui/core/Button';
 
 import './Bothnav.scss';
-const WideNav = () => {
+
+const WideNav: React.FC = () => {
     return (
         <nav className="nav">
             <div><a href="#about-me">

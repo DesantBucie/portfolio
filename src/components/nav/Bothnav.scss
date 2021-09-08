@@ -1,27 +1,40 @@
 @import "../Colors.scss";
 
-nav {
+.d-nav {
     display: flex;
-}
-.nav__sidenav {
-    height:100%;
-    width:0;
-    position: fixed;
-    z-index: 2;
-    top:0;
-    right:0;
-    background-color:$lightmode_lightblue;
-    overflow-x: hidden;
-    transition: 0.5s;
-    white-space: nowrap;
-    & a{
-        padding:1em;
+    flex-wrap: nowrap;
+    & button {
         display: block;
-        transition: 0.3s;
+        flex-direction: column;
+        white-space: nowrap;
     }
 }
+.m-nav{
+    &__button {
+        display: block !important;
+        margin-left:2em !important;
+        margin-bottom: 2em !important;
+    }
+    &__sidenav {
+        height:100%;
+        width:0;
+        position: fixed;
+        z-index: 2;
+        top:0;
+        right:0;
+        background-color:$lightmode_lightblue;
+        overflow-x: hidden;
+        transition: 0.5s;
+        white-space: nowrap;
+        & a{
+            padding:1em;
+            display: block;
+            transition: 0.3s;
+        }
+    }
+}   
 .darkmode {
-    .nav__sidenav {
+    .m-nav__sidenav {
         background: $darkmode_marine;
     }
 }

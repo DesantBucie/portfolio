@@ -1,19 +1,43 @@
+import React, { FC } from 'react';
 import Button from '@material-ui/core/Button';
 
 import './Bothnav.scss';
 
-const WideNav: React.FC = () => {
+
+interface props {
+    language: boolean,
+    moveTo:Function,
+};
+
+const WideNav: FC<props> = (props) => {
+
     return (
-        <nav className="nav">
-            <div><a href="#about-me">
-                <Button variant="contained" color="primary">About me</Button>
-            </a></div>
-            <div><a href="#my-projects">
-                <Button variant="contained" color="primary">My projects</Button>
-            </a></div>
-            <div><a href="#contact">
-                <Button style={{ backgroundColor: "#21b6ae", }} variant="contained">Contact</Button>
-            </a></div>
+        <nav className="d-nav">
+            <Button
+                onClick={e => props.moveTo(e)}
+                name="about-me"
+                color="primary">
+                {props.language ? 'About me' : 'O mnie'}
+            </Button>
+            <Button
+                onClick={e => props.moveTo(e)}
+                name="skills"
+                color="primary">
+                {props.language ? 'Skills' : 'Umiejętności'}
+            </Button>
+            <Button
+                onClick={e => props.moveTo(e)}
+                name="my-projects"
+                color="primary">
+                {props.language ? 'My projects' : 'Moje projekty'}
+            </Button>
+            <Button
+                onClick={e => props.moveTo(e)}
+                name="contact"
+                style={{ backgroundColor: "#21b6ae", }}
+                variant="contained">
+                {props.language ? 'Contact' : 'Kontakt'}
+            </Button>
         </nav>
     );
 };

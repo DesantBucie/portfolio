@@ -31,18 +31,50 @@
         }
     }
     &__container {
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: space-evenly;
-        background-color: #eee;
+        grid-template-columns: repeat(4,1fr);
+        display: grid;
+        justify-items: center;
+        //background-color: #eee;
         border-radius: 20px;
     }
     &__tile {
-        width: 25%;
         box-sizing: border-box;
-        max-width:200px;
-        min-width: 150px;
         border-radius: 20px;
-        margin:2em;
+        margin:1em;
+        width:60%;
+        background:#eee;
+        padding:1em;
+        & img {
+            margin:20%;
+        }
+        &:hover {
+            background: #ddd;
+        }
+        
+    }
+}
+@media only screen and (max-width:1023px) {
+    .skills {
+        &__container {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+@media only screen and (max-width:400px) {
+    .skills {
+        & h3 {
+            font-size: 18pt;
+        }
+        &__tile {
+            box-sizing: border-box;
+            border-radius: 20px;
+            margin-top:0em;
+            width:80%;
+            background:#eee;
+            padding:0em; 
+            & img {
+                margin:1em;
+            }
+        }
     }
 }

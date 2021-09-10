@@ -34,8 +34,8 @@ const WideNav: FC<props> = (props) => {
             <Button
                 onClick={e => props.moveTo(e)}
                 name="contact"
-                style={{ backgroundColor: "#21b6ae", }}
-                variant="contained">
+                style={{ color: "#21b6ae", }}
+            >
                 {props.language ? 'Contact' : 'Kontakt'}
             </Button>
         </nav>

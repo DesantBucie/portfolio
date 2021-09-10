@@ -2,11 +2,16 @@ import { FC } from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+import Brightness7Icon from '@material-ui/icons/Brightness7';
 
 import './Bothnav.scss';
 interface props {
     language: boolean,
+    icon: boolean,
     moveTo:Function,
+    darkmode:Function,
+    handleLang:Function,
 };
 const MobileNav: FC<props> = (props) => {
     const openSidebar = async () => {
@@ -14,6 +19,12 @@ const MobileNav: FC<props> = (props) => {
     }
     const closeSidebar = async () => {
         document.getElementById("m-nav__sidenav")!.style.width = '0';
+    }
+    const darkmode = () => {
+        props.darkmode();
+    }
+    const handleLang = () => {
+        props.handleLang();
     }
     return (
         <nav className="m-nav">
@@ -56,6 +67,14 @@ const MobileNav: FC<props> = (props) => {
                     variant="contained">
                     {props.language ? 'Contact' : 'Kontakt'}
                 </Button>
+                <div className='m-nav__button'>
+                    <Button onClick={darkmode} color="primary">
+                            {props.icon ? <Brightness7Icon /> : <Brightness4Icon/> }
+                    </Button>
+                    <Button color="primary" onClick={handleLang}>
+                            {props.language ? '🇬🇧' : '🇵🇱'}
+                    </Button>
+                </div>
             </div>
         </nav>
     );

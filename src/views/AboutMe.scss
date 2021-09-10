@@ -1,8 +1,8 @@
 @import "../components/Colors.scss";
 .about-me {
     display:flex;
-    padding-top:18em;
-    padding-bottom:10em;
+    padding-top:15em !important;
+    padding-bottom:5em !important;
     background: #eee;
     & h2 {
         font-size: 48pt;
@@ -19,17 +19,16 @@
         padding-left:2em;
         &--polish {
             display: block;
-            text-align: left;
-            padding-left:0.5em;
+            text-align: left;   
             white-space: nowrap;
             width:min-content;
             &::after{
                 content:'';
                 height:40px;
-                width:250px;
-                left:10px;
+                width:220px;
+                left:-10px;
                 top:50px;
-                background-color: $lightmode_yellow;
+                background-color: $lightmode_lightblue;
                 position: absolute;
                 z-index: -1;
             }
@@ -40,7 +39,7 @@
             width:200px;
             top:50px;
             left:calc(-1%);
-            background-color: $lightmode_yellow;
+            background-color: $lightmode_lightblue;
             position: absolute;
             z-index: -1;
         }

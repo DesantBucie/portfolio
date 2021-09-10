@@ -5,19 +5,8 @@
     text-align: center;
     padding-top: 12em;
     padding-bottom: 5em;
-    &__button {
-        border-radius: 50%;
-        width:50px;
-        height:50px;
-        border:0;
-        background-color: $lightmode_lightblue;
-        transition: .2s;
-        cursor: pointer;
-        border:2px solid $lightmode_yellow;
-        &:hover {
-            background-color: #eee;
-            border: 2px solid $lightmode_lightblue;
-        }
+    & div {
+        margin:auto;
     }
     &__header {
         font-size: 64pt;

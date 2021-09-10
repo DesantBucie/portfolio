@@ -1,7 +1,9 @@
 import { FC, useState } from 'react';
 
-import { SliderContent } from '../components/slider/SliderContent';
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import { settings, SliderContent } from '../components/slider/SliderContent';
+import { FaLongArrowAltLeft, FaLongArrowAltRight} from 'react-icons/fa';
+
+import Slider from "react-slick";
 
 import './MyProjects.scss';
 interface props {
@@ -20,20 +22,21 @@ const MyProjects: FC<props> = (props) => {
     return (
         <div>
             <section className="my-projects" id="my-projects">
-                <h2>{props.language ? 'My projects' : 'Moje projekty'}</h2>
-                <FaArrowAltCircleLeft onClick={setPrev} />
-                <FaArrowAltCircleRight onClick={setNext} />
-                {SliderContent.map((slide, index) => {
-                    if (current === slide.id) {
-                        return (
-                            <div className="my-projects__project">
-                                <h3>{slide.header}</h3>
-                                <p>{slide.text}</p>
-                                <div className="my-projects__image"><img src={slide.image} alt="slider_img" /></div>
-                            </div>
-                        );
+                {(()=> {
+                    if(props.language) {
+                        return (<h2 className="my-projects--english">My projects</h2>)
                     }
-                })}
+                    else {
+                        return(<h2 className="my-projects--polish">Moje projekty</h2>)
+                    }
+                })()}
+                <Slider {...settings}>
+                {SliderContent.map((slider) => (
+                  <div key={slider.id}>
+                    <img src={slider.image} alt='slider image' />
+                  </div>
+                ))}
+                </Slider>
             </section>
         </div>
     );

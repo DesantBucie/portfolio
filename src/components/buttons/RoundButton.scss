@@ -1,0 +1,16 @@
+@import '../Colors.scss';
+
+.round-button {
+    cursor: pointer;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    background-color: $lightmode_lightblue;
+    transition: .2s;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: #eee;
+    }
+}

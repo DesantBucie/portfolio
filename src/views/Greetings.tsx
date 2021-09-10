@@ -1,17 +1,12 @@
 import {FC} from 'react';
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import RoundButton from '../components/buttons/RoundButton';
 import './Greetings.scss';
 interface props {
     language:boolean
 }
 const Greetings: FC<props> = (props) => {
-    const moveDown = () => {
-        const height:number = document.getElementById('about-me')!.offsetTop;
-        window.scrollTo({
-            left:0,
-            top:height,
-            behavior: 'smooth'
-        });
+    const moveTo = () => {
+        document.getElementById('about-me')!.scrollIntoView({behavior:"smooth"});
     }
     return (
         <div>
@@ -28,8 +23,7 @@ const Greetings: FC<props> = (props) => {
                     </span>
                 </h1>
 
-                <h2>{props.language? "I'm aspiring programmer intrested in low level programming and web applications." : "Jestem początkującym programistą zainteresowanym niskopoziomowym programowaniem"}</h2>
-                <button className="greetings__button" onClick={moveDown}><KeyboardArrowDownIcon/></button>
+                <div onClick={moveTo}><RoundButton whichArrow={'down'}/></div>
             </section>
             <div className="greetings__triangle">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

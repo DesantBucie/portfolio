@@ -4,8 +4,8 @@
 }
 .my-projects, .contact, .about-me,.footer, .skills{
 	padding:1em;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 20%;
+	padding-right: 20%;
 }
 .darkmode {
 	background:$darkmode_background;
@@ -15,8 +15,15 @@
 		text-decoration: underline;
 	}
 }
+@media only screen and (max-width:1680px) {
+	.my-projects, .contact, .about-me, .footer, .skills{
+		padding:1em;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
 @media only screen and (max-width:850px) {
-	.my-projects, .contact, .about-me, .header, .footer{
+	.my-projects, .contact, .about-me, .header, .footer, .skills{
 		padding:1em;
 		padding-left: .5em;
 		padding-right: .5em;

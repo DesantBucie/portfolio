@@ -23,13 +23,17 @@
 
         & img {
             max-width:80px;
-            width:60px;
+            width:50px;
             padding-left:1em;
+            padding-top:1em;
 
             &:hover {
                 animation: header__logo--spin 1s  
             }
         }
+    }
+    &__flag {
+        width:30px;
     }
 }
 .darkmode {
@@ -41,9 +45,14 @@
         //code from website colouring svgs
     }
 }
-@media only screen and (min-width:750px) {
+@media only screen and (min-width:1023px) {
 	.header__sidenav {
         display: none;
+    }
+}
+@media only screen and (max-width:1023px) {
+	.header {
+        justify-content: space-between;
     }
 }
 @keyframes header__logo--spin {

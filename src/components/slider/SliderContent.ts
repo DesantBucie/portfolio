@@ -1,6 +1,6 @@
 import korny from '../media/korny.png';
-import paleofetch from '../media/paleofetch.gif';
-import easy_vim from '../media/easy-vim.gif';
+import paleofetch from '../media/paleofetch.png';
+import easy_vim from '../media/easy-vim.png';
 import antila from '../media/antila.png';
 
 export const settings = {
@@ -25,7 +25,7 @@ export const SliderContent = [
         header:'Paleofetch',
         text:"is a fork of a copy of neofetch written in C. Currently works only on mac, I'll try to bring it on the BSDs and Solaris family. It is on macOS even 20 times faster than neofetch. Most of code is new.",
         textpl:'to fork kopii neofetch\'a napisanej w C. Obecnie działa tylko na macu, ale postaram się przeportować to też na BSD i Solarisy. Na macOS\'ie jest około 20 razy szybszy niż neofetch. Większość kodu jest nowa.',
-        gitlab:'https://gitlab.com/DesantBucie/paleofetch-mac',
+        github:'https://gitlab.com/DesantBucie/paleofetch-mac',
     },
     {   
         id:2,

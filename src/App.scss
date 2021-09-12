@@ -3,7 +3,7 @@
 	margin: 0 auto;
 }
 .my-projects, .contact, .about-me,.footer, .skills{
-	padding:1em;
+	padding:2em;
 	padding-left: 20%;
 	padding-right: 20%;
 }
@@ -17,16 +17,16 @@
 }
 @media only screen and (max-width:1680px) {
 	.my-projects, .contact, .about-me, .footer, .skills{
-		padding:1em;
-		padding-left: 10%;
-		padding-right: 10%;
+		padding:2em;
+		padding-left: 15%;
+		padding-right: 15%;
 	}
 }
 @media only screen and (max-width:850px) {
 	.my-projects, .contact, .about-me, .header, .footer, .skills{
 		padding:1em;
-		padding-left: .5em;
-		padding-right: .5em;
+		padding-left: 10%;
+		padding-right: 10%;
 	}
 }
 @keyframes app__logo--spin {

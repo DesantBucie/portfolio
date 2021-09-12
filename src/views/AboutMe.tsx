@@ -32,8 +32,7 @@ const AboutMe: FC<props> = (props) => {
                 </h2>
             </div>
             <div className="about-me__content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sed enim egestas auctor imperdiet nibh id. Et, odio ut tincidunt sit arcu sagittis condimentum. Adipiscing aliquam aliquam elementum aliquet magna velit non sit donec. Sed fermentum tincidunt nunc ut hac. Fusce laoreet odio enim ullamcorper sapien lacus mattis enim, mauris.
-                    Sed vel nunc pharetra egestas leo. Habitasse arcu nam sagittis quis. Lacus cras egestas nisl ornare odio tortor donec ac duis. Sed justo morbi pellentesque dolor. Viverra euismod nec ultrices amet, id sit consequat amet sit. Enim interdum quam ut malesuada. Et fermentum convallis phasellus non, a pellentesque diam. Mi est egestas id cursus orci eu nulla fusce montes. Id maecenas duis ac tincidunt ut id.</p>
+                <p>{props.language ? 'I am Jakub Truszkowski. I am a IT stundent in Częstochowa University of Technology. I like to discover new operating systems, usually those not known widely. I develop my skills in Front-end(JS,TS) and C. I want to learn backend node.js soon. I am interested also in Space, or rather what Man uses to get there. I hope that someday Polish rocket will take-off as well.' : 'Nazywam się Jakub Truszkowski. Jestem studentem informatyki na Politechnice Częstochowskiej. Lubię poznawać nowe systemy operacyjne, zazwyczaj te mniej znane. Rozwijam swoje umiejętności we front-endzie(JS,TS) i C. Mam w planach naukę backendu w node.js. Interesuję się też kosmosem, a raczej jak towary czy ludzie się do niego dostają. Mam nadzieję, że i kiedyś polska rakieta wzbije się w powietrze :).'} </p>
             </div>
         </section>
     );

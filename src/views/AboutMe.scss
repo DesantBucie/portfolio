@@ -1,15 +1,13 @@
 @import "../components/Colors.scss";
 .about-me {
     display:flex;
-    padding-top:15em !important;
-    padding-bottom:5em !important;
+    align-items: center;
     background: #eee;
-    & h2 {
-        font-size: 48pt;
-        width:min-content;
+    & p {
+        font-size:1.2rem;
     }
     &__header {
-        width:40%;
+        width:50%;
         position: relative;
     }
     &__lower {
@@ -38,7 +36,7 @@
             height:40px;
             width:200px;
             top:50px;
-            left:calc(-1%);
+            left:-10px;
             background-color: $lightmode_lightblue;
             position: absolute;
             z-index: -1;
@@ -50,23 +48,34 @@
            display: block;
     }
     &__content {
-        width:60%;
+        width:40%;
     }
 }
 @media only screen and (max-width:850px) {
 	.about-me {
         flex-direction: column;
-        h2 {
-            margin:auto;
-        }
         &__header, &__content {
             width: 100%;
+            margin:1em;
+        }
+        &__header h2 {
+            padding-bottom: 0rem !important;
         }
         &__lower {
             padding-left:2em;
             &::after{
-                left:calc(-1%);
+                width: 150px;
+                top:30px;;
+              
             }
+            &--polish {
+                &::after{
+                    width:180px;
+                    left:-10px;
+                    top:30px;
+                }
+            }
+
         }
     }
 }

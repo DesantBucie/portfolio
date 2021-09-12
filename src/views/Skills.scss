@@ -2,10 +2,7 @@
 
 .skills {
     background-color: $lightmode_lightblue;
-    & h2 {
-        font-size:48pt;
-        width: min-content;
-    }
+    padding-bottom:5em !important;
     &--english {
         &::after {
             content:'';
@@ -60,11 +57,27 @@
         }
     }
 }
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:850px) {
     .skills {
-        & h3 {
-            font-size: 18pt;
+        &--english {
+            &::after {
+                height:40px;
+                width:140px;
+                top:30px;
+            }
         }
+        &--polish {
+            &::after {
+                height:40px;
+                width:290px;
+                top:30px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:450px) {
+    .skills {
+        padding:0 !important;
         &__tile {
             box-sizing: border-box;
             border-radius: 20px;

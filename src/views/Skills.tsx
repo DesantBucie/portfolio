@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import { FC } from 'react';
 
 import html from '../assets/html5.svg';
 import css from '../assets/css3.svg';
@@ -10,51 +10,49 @@ import react from '../assets/react.svg';
 import git from '../assets/git.svg';
 
 import './Skills.scss';
+
 interface props {
-    language:boolean
+    language: boolean
 };
-const Skills:FC<props> = (props) => {
+const Skills: FC<props> = (props) => {
     return (
         <section id="skills" className="skills">
-            {(()=>{
-                if(props.language){
-                    return(<><h2 className="skills--english">Skills</h2></>);
-                }
-                else {
-                    return(<><h2 className="skills--polish">Technologie</h2></>)
-                }
-            })()}
+            {props.language ?
+                <h2 className="skills--english">Skills</h2>
+                :
+                <h2 className="skills--polish">Technologie</h2>
+            }
             <div className="skills__container">
                 <div className="skills__tile">
-                    <img src={html} alt="html"/>
+                    <img src={html} alt="html" />
                     <h3>HTML5</h3>
                 </div>
                 <div className="skills__tile">
-                    <img src={css} alt='css'/>
+                    <img src={css} alt='css' />
                     <h3>CSS3</h3>
                 </div>
                 <div className="skills__tile">
-                    <img src={react} alt='react'/>
+                    <img src={react} alt='react' />
                     <h3>React</h3>
                 </div>
                 <div className="skills__tile">
-                    <img src={js} alt='javascript'/>
+                    <img src={js} alt='javascript' />
                     <h3>Javascript</h3>
                 </div>
                 <div className="skills__tile">
-                    <img src={ts} alt='typescript'/>
+                    <img src={ts} alt='typescript' />
                     <h3>Typescript</h3>
                 </div>
                 <div className="skills__tile">
-                    <img src={figma} alt='figma'/>
+                    <img src={figma} alt='figma' />
                     <h3>Figma</h3>
                 </div>
                 <div className="skills__tile">
-                    <img src={sass} alt='sass'/>
+                    <img src={sass} alt='sass' />
                     <h3>Sass/Scss</h3>
-                    </div>
+                </div>
                 <div className="skills__tile">
-                    <img src={git} alt='git'/>
+                    <img src={git} alt='git' />
                     <h3>Git</h3>
                 </div>
             </div>

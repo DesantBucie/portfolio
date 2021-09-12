@@ -1,0 +1,28 @@
+.m-projects {
+    box-sizing: border-box;
+    width:80%;
+    margin:auto;
+    padding:3em 0em 1em 0em;
+    &__slide {
+        position: relative;
+    }
+    &__content {
+        position: absolute;
+        width:100%;
+        height: 100%;
+        top:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        & a h3 {
+            padding-left: 0;
+            margin-bottom: 0em;
+            font-size:36pt;
+        }
+        & a h4 {
+            margin:0.3em;
+            text-align: center;
+            font-size: 24pt;
+        }
+    }
+}

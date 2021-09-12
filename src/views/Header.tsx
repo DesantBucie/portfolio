@@ -13,19 +13,19 @@ import GbFlag from '../assets/gb-flag.svg';
 
 interface props {
     language:boolean,
+    width:number,
     handleLang:Function,
 }
 const Header:FC<props> = (props) => {
 
-    const [width, setWidth] = useState<number>(window.innerWidth);
     const [icon, setIcon] = useState<boolean>(document.body.classList.contains("darkmode"));
 
     const handleLang = () => {
         props.handleLang();
     }
     const darkmode = () => {
-        document.body.classList.toggle('darkmode');
-        document.body.classList.contains('darkmode') ? setIcon(true) : setIcon(false);
+        //document.body.classList.toggle('darkmode');
+        //document.body.classList.contains('darkmode') ? setIcon(true) : setIcon(false);
     }
     const prefferedLanguage = () => {
         const userLang = navigator.language;
@@ -36,10 +36,10 @@ const Header:FC<props> = (props) => {
         if(userPrefersDarkmode) darkmode();
     }
     
-    /*useEffect(() => {
+    useEffect(() => {
         checkIfUserPrefersDarkmode();
          // eslint-disable-next-line
-    },[]);*/
+    },[]);
     useEffect(() => {
         prefferedLanguage();
          // eslint-disable-next-line
@@ -49,15 +49,7 @@ const Header:FC<props> = (props) => {
         event.preventDefault();
         document.getElementById(event.currentTarget.name)!.scrollIntoView({behavior:"smooth"});
     }
-    useEffect(() => {
-        const handleResize = () => {
-            setWidth(window.innerWidth);
-        }
-        window.addEventListener("resize", handleResize);
-        handleResize();
-        return () => window.removeEventListener("resize", handleResize);
-    }, [width]);
-    if (width > 1023) {
+    if (props.width > 1023) {
         return (
             <header className="header">
                     <div className="header__logo">

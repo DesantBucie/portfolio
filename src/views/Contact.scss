@@ -1,14 +1,13 @@
 @import '../components/Colors.scss';
 
 .contact { 
-    padding-top: 8em !important;
+    padding-top: 10em !important;
     padding-bottom: 5em !important;
     background: $lightmode_yellow;
+    
     & h2 {
-        font-size: 4em;
-        width:min-content;
-        text-align: center;
-        margin:auto;
+        margin:auto !important;
+        padding-bottom: 5rem;
         &::after{
             content:'';
             height:40px;
@@ -20,37 +19,44 @@
             z-index: -1;
         }
     }
-    & h3 {
-        font-size: 2em;
-    }
     & a {
         text-align: center;
     }
     &__container {
-        padding: 4em;
+        width:50%;
+        margin:auto;
+        font-size:1.2rem;
+        text-align: center;
+        padding-bottom:2rem;
     }
-    &__triangle {
+    &__tilt {
         position: absolute;
         left: 0;
         width: 100%;
         overflow: hidden;
         line-height: 0;
-        background: $lightmode_yellow;
-        &--bottom {
-            transform: rotate(180deg);
+        & svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
         }
     }
-    
-    &__triangle svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 128px;
-        transform: rotateY(180deg);
+    &__tilt &__shape-fill {
+        fill: #eee;
     }
-    
-    &__triangle &__shape-fill {
-        fill: $lightmode_lightblue;
+}
+@media only screen and (max-width:850px) {
+	.contact {
+        & h2 {
+            &::after{
+                width:115%;
+                top:30px;
+            }
+        }
+        &__container {
+            width:80%;
+        }
     }
 }
 .darkmode {

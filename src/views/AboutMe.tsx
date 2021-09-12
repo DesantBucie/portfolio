@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import './AboutMe.scss';
 interface props {
-    language:boolean
+    language: boolean
 }
 const AboutMe: FC<props> = (props) => {
     return (
@@ -10,24 +10,14 @@ const AboutMe: FC<props> = (props) => {
             <div className="about-me__header">
                 <h2>
 
-                    {(() => {
-                        if(props.language){
-                            return (
-                                <>
-                                    <span className="about-me__upper">About</span>
-                                    <span className="about-me__lower">Me</span>
-                                </>
-                            )
-                        }
-                        else {
-                            return (
-                                <>
-                                    <span className="about-me__lower--polish">O Mnie</span>
-                                </>
-                            )
-                        }
+                    {props.language ?
+                        <>
+                            <span className="about-me__upper">About</span>
+                            <span className="about-me__lower">Me</span>
+                        </>
+                        :
+                        <span className="about-me__lower--polish">O Mnie</span>
                     }
-                    )()}
 
                 </h2>
             </div>

@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react';
-import RoundButton  from '../../components/buttons/RoundButton';
+import RoundButton  from 'components/buttons/RoundButton';
 import './GoUpButton.scss';
 
 const GoUpButton:FC = () => {

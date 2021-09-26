@@ -1,4 +1,5 @@
 @import '../components/Colors.scss';
+@import '../components/BreakingPoints.scss';
 
 .contact { 
     padding-top: 10em !important;
@@ -29,24 +30,8 @@
         text-align: center;
         padding-bottom:2rem;
     }
-    &__tilt {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        & svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 150px;
-        }
-    }
-    &__tilt &__shape-fill {
-        fill: #eee;
-    }
 }
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:$mobile_breakpoint) {
 	.contact {
         & h2 {
             &::after{
@@ -60,13 +45,12 @@
     }
 }
 .darkmode {
-    .contact__triangle .contact__shape-fill {
-        fill :$darkmode_marine;
-    }
     .contact {
         background: $darkmode_darkblue;
-        &__triangle {
-            background: $darkmode_darkblue;
+        & h2 {
+            &::after {
+               background-color:$darkmode_marine;
+            }
         }
     }
 }

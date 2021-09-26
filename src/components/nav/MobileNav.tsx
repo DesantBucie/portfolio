@@ -5,8 +5,8 @@ import Button from '@material-ui/core/Button';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
 
-import PlFlag from '../../assets/pl-flag.svg';
-import GbFlag from '../../assets/gb-flag.svg';
+import PlFlag from 'assets/pl-flag.svg';
+import GbFlag from 'assets/gb-flag.svg';
 
 import './Bothnav.scss';
 interface props {

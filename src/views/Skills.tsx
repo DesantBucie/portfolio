@@ -1,13 +1,13 @@
 import { FC } from 'react';
 
-import html from '../assets/html5.svg';
-import css from '../assets/css3.svg';
-import sass from '../assets/sass.svg';
-import js from '../assets/javascript.svg';
-import ts from '../assets/typescript.svg';
-import figma from '../assets/figma.svg';
-import react from '../assets/react.svg';
-import git from '../assets/git.svg';
+import html from 'assets/html5.svg';
+import css from 'assets/css3.svg';
+import sass from 'assets/sass.svg';
+import js from 'assets/javascript.svg';
+import ts from 'assets/typescript.svg';
+import figma from 'assets/figma.svg';
+import react from 'assets/react.svg';
+import git from 'assets/git.svg';
 
 import './Skills.scss';
 

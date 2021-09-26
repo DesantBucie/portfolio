@@ -1,15 +1,15 @@
 import { FC } from 'react';
-
 import './AboutMe.scss';
+
 interface props {
     language: boolean
 }
+
 const AboutMe: FC<props> = (props) => {
     return (
         <section id="about-me" className="about-me">
             <div className="about-me__header">
                 <h2>
-
                     {props.language ?
                         <>
                             <span className="about-me__upper">About</span>
@@ -18,7 +18,6 @@ const AboutMe: FC<props> = (props) => {
                         :
                         <span className="about-me__lower--polish">O Mnie</span>
                     }
-
                 </h2>
             </div>
             <div className="about-me__content">

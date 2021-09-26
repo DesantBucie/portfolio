@@ -1,8 +1,11 @@
 @import "../components/Colors.scss";
+@import '../components/BreakingPoints.scss';
+
 .about-me {
     display:flex;
     align-items: center;
     background: #eee;
+    transition: .5s;
     & p {
         font-size:1.2rem;
     }
@@ -51,7 +54,7 @@
         width:40%;
     }
 }
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:$mobile_breakpoint) {
 	.about-me {
         flex-direction: column;
         &__header, &__content {
@@ -76,6 +79,16 @@
                 }
             }
 
+        }
+    }
+}
+.darkmode {
+    .about-me {
+        background-color: $darkmode_background;
+        &__lower {
+            &::after {
+               background-color:$darkmode_marine;
+            }
         }
     }
 }

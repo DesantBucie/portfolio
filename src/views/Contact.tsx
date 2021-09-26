@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { SvgTilt } from 'components/svg_tilt/SvgTilt';
 import { FaEnvelope, FaGithub } from 'react-icons/fa';
 import './Contact.scss';
 
@@ -8,11 +9,7 @@ interface props {
 const Contact: FC<props> = (props) => {
     return (
         <div>
-            <div className="contact__tilt">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="contact__shape-fill"></path>
-                </svg>
-            </div>
+            <SvgTilt/>
             <section className="contact" id="contact">
                 <h2>{props.language ? 'Contact' : 'Kontakt'}</h2>
                 <section className="contact__container">

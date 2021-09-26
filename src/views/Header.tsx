@@ -1,15 +1,15 @@
 import './Header.scss';
-import logo from '../assets/logo2.svg';
+import logo from 'assets/logo2.svg';
 import { FC, useEffect, useState } from 'react';
 
-import MobileNav from '../components/nav/MobileNav';
-import WideNav from '../components/nav/WideNav';
+import MobileNav from 'components/nav/MobileNav';
+import WideNav from 'components/nav/WideNav';
 import Button from '@material-ui/core/Button';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import Brightness7Icon from '@material-ui/icons/Brightness7';
 
-import PlFlag from '../assets/pl-flag.svg';
-import GbFlag from '../assets/gb-flag.svg';
+import PlFlag from 'assets/pl-flag.svg';
+import GbFlag from 'assets/gb-flag.svg';
 
 interface props {
     language:boolean,
@@ -24,8 +24,8 @@ const Header:FC<props> = (props) => {
         props.handleLang();
     }
     const darkmode = () => {
-        //document.body.classList.toggle('darkmode');
-        //document.body.classList.contains('darkmode') ? setIcon(true) : setIcon(false);
+        document.body.classList.toggle('darkmode');
+        document.body.classList.contains('darkmode') ? setIcon(true) : setIcon(false);
     }
     const prefferedLanguage = () => {
         const userLang = navigator.language;

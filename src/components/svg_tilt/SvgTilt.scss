@@ -1,0 +1,39 @@
+@import 'components/Colors.scss';
+
+.svg-tilt {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index:1;
+    &--rotationX {
+        transform: rotateX(180deg);
+    }
+    &--rotationY {
+        transform: rotateY(180deg);
+    }
+}
+
+.svg-tilt__svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 128px;
+    &--rotationY {
+        transform: rotateY(180deg);
+    }
+    &--rotationX {
+        transform: rotateX(180deg);
+    }
+}
+
+.svg-tilt .svg-tilt__shape-fill {
+    fill:#eee;
+    transition: .5s;
+}
+.darkmode {
+    .svg-tilt .svg-tilt__shape-fill {
+        fill:$darkmode_background;
+    }
+}

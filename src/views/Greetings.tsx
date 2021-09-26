@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import RoundButton from '../components/buttons/RoundButton';
+import { SvgTilt } from 'components/svg_tilt/SvgTilt';
+import RoundButton from 'components/buttons/RoundButton';
 import './Greetings.scss';
 interface props {
     language: boolean
@@ -10,11 +11,7 @@ const Greetings: FC<props> = (props) => {
     }
     return (
         <div>
-            <div className="greetings__tilt">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="greetings__shape-fill"></path>
-                </svg>
-            </div>
+            <SvgTilt svg={'--rotationY'}/>
             <section className="greetings" id="greetings">
                 <h1 className="greetings__header">
                     {props.language ? 'Hello, ' : 'Cześć, '}
@@ -24,11 +21,7 @@ const Greetings: FC<props> = (props) => {
                 </h1>
 
                 <div className="greetings__button" onClick={moveTo}><RoundButton whichArrow={'down'} /></div>
-                <div className="greetings__triangle">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="greetings__shape-fill"></path>
-                    </svg>
-                </div>
+                <SvgTilt svg={'--rotationX'}/>
             </section>
         </div>
     );

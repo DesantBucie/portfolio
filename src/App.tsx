@@ -1,11 +1,10 @@
-import Header from './views/Header';
-import Greetings from './views/Greetings';
-import AboutMe from './views/AboutMe';
-import Skills from './views/Skills';
-import MyProjects from'./views/MyProjects';
-import Contact from './views/Contact';
-import GoUpButton from './views/GoUpButton/GoUpButton';
-
+import Header from 'views/Header';
+import Greetings from 'views/Greetings';
+import AboutMe from 'views/AboutMe';
+import Skills from 'views/Skills';
+import MyProjects from 'views/MyProjects';
+import Contact from 'views/Contact';
+import GoUpButton from 'views/GoUpButton/GoUpButton';
 import {FC, useState, useEffect} from 'react';
 
 import './App.scss';

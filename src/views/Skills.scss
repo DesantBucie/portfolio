@@ -1,4 +1,5 @@
 @import '../components/Colors.scss';
+@import '../components/BreakingPoints.scss';
 
 .skills {
     background-color: $lightmode_lightblue;
@@ -57,7 +58,7 @@
         }
     }
 }
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:$mobile_breakpoint) {
     .skills {
         &--english {
             &::after {
@@ -75,7 +76,7 @@
         }
     }
 }
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:$small_mobile_breakpoint) {
     .skills {
         padding:0 !important;
         &__tile {
@@ -87,6 +88,24 @@
             padding:0em; 
             & img {
                 margin:1em;
+            }
+        }
+    }
+}
+.darkmode {
+    .skills {
+        background-color: #333;
+        &__tile {
+            background-color: #111;
+        }
+        &--polish {
+            &::after {
+                background:$darkmode_marine;
+            }
+        }
+        &--english {
+            &::after {
+                background:$darkmode_marine;
             }
         }
     }

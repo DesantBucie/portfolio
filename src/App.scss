@@ -1,4 +1,6 @@
 @import './components/Colors.scss';
+@import './components/BreakingPoints.scss';
+
 .app {
 	margin: 0 auto;
 }
@@ -22,7 +24,7 @@
 		padding-right: 15%;
 	}
 }
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:$mobile_breakpoint) {
 	.my-projects, .contact, .about-me, .header, .footer, .skills{
 		padding:1em;
 		padding-left: 10%;

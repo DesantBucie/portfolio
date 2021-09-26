@@ -1,4 +1,5 @@
 @import "../components/Colors.scss";
+@import '../components/BreakingPoints.scss';
 
 .my-projects {
     background: #eee;
@@ -48,7 +49,7 @@
         }
     }
 }
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:$mobile_breakpoint) {
     .my-projects {
         
         &--polish {
@@ -67,12 +68,16 @@
 }
 .darkmode {
     .my-projects {
-        background-color: $darkmode_marine;
-        &__project {
-            background-color: $darkmode_tile;
+        background-color: $darkmode_background;
+        &--polish {
+            &::after{
+                background:$darkmode_marine;
+            }
         }
-    }
-    .my-projects__triangle .my-projects__shape-fill {
-        fill: $darkmode_darkblue;
+        &--english {
+            &::after{
+                background:$darkmode_marine;
+            }
+        }
     }
 }

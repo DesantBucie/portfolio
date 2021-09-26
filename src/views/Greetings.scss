@@ -1,4 +1,6 @@
 @import "../components/Colors.scss";
+@import '../components/BreakingPoints.scss';
+
 .greetings {
     background-color: $lightmode_yellow;
     transition: 0.5s;
@@ -16,58 +18,10 @@
     &__header {
         position: relative;
     }
-    &__tilt {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        z-index: 1;
-    }
-    
-    &__tilt svg {
-        position: relative;
-        display: block;
-        width: calc(100% + 1.3px);
-        height: 128px;
-        transform: rotateY(180deg);
-    }
-    
-    &__tilt &__shape-fill {
-        fill: #eee;
-        transition: 0.5s;
-    }
-}
-.greetings__triangle {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.greetings__triangle svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 128px;
-    transform: rotateY(180deg);
-}
-
-.greetings__triangle .greetings__shape-fill {
-    fill:#eee;
-    transition: .5s;
 }
 .darkmode {
         .greetings {
             background: url(https://wallpapercave.com/wp/wp2757874.gif);
-        }
-        .greetings__tilt .greetings__shape-fill {
-            fill: #111;
-        }
-        .greetings__triangle .greetings__shape-fill {
-            fill: $darkmode_darkblue;
         }
 }
 @keyframes greetings__button {

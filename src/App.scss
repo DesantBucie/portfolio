@@ -14,7 +14,10 @@
 	color:$darkmode_color;
 	& a {
 		color:$darkmode_color;
-		text-decoration: underline;
+		//text-decoration: underline;
+		&:hover {
+			color:#777;
+		}
 	}
 }
 @media only screen and (max-width:1680px) {

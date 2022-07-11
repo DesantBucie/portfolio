@@ -12,6 +12,9 @@ body {
 a {
   	text-decoration: none;
 	color:black;
+	&:hover{
+		color:#444;
+	}
 }
 ul {
   	list-style-type:circle;
@@ -43,16 +46,16 @@ img {
 }
 @media only screen and (max-width:850px) {
 	h1 {
-		font-size: 40pt;
+		font-size: 36pt;
 	}
 	h2 {
 		margin:auto;
 		padding-bottom:5rem;
-		font-size: 36pt;
+		font-size: 32pt;
 	}
 }
 @media only screen and (max-width:375px) {
-	h3, h3 a{
-		font-size: 22pt;
+	h3, a h3  {
+		font-size: 14pt;
 	}
 }

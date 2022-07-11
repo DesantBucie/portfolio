@@ -1,6 +1,6 @@
 .m-projects {
     box-sizing: border-box;
-    width:80%;
+    width:100%;
     margin:auto;
     padding:3em 0em 1em 0em;
     &__slide {
@@ -17,12 +17,49 @@
         & a h3 {
             padding-left: 0;
             margin-bottom: 0em;
-            font-size:36pt;
+            font-size:30pt;
         }
         & a h4 {
             margin:0.3em;
             text-align: center;
-            font-size: 24pt;
+            font-size: 20pt;
+        }
+    }
+}
+.slick {
+    &-prev {
+        left:-35px;
+    }
+    &-next {
+        right:-35px;
+    }
+    &-next, &-prev {
+    width:40px;
+    height:40px;
+        &:before {
+            font-size:30px;
+        }
+    }
+}
+.darkmode {
+    & .slick {
+        &-next, &-prev {
+            &:before {
+                color:#EEE;
+            }
+        }
+        &-dots li.slick-active button:before{
+            color:#eee;
+        }
+        &-dots li button:before{
+            color:#ddd;
+        }
+    }
+}
+@media only screen and (max-width:375px) {
+    .m-projects {
+        & a h3, a h4 {
+            font-size:20pt;
         }
     }
 }

@@ -2,6 +2,7 @@ import korny from '../media/korny.png';
 import paleofetch from '../media/paleofetch.png';
 import easy_vim from '../media/easy-vim.png';
 import antila from '../media/antila.png';
+import libspl from '../media/libspl.png';
 
 export const settings = {
     dots: true,
@@ -9,7 +10,7 @@ export const settings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
-  };
+};
 export const SliderContent = [
     {
         id:0,
@@ -22,18 +23,18 @@ export const SliderContent = [
     {   
         id:1,
         image: paleofetch,
-        header:'Paleofetch',
+        header:'Paleofetch-mac',
         text:"is a fork of a copy of neofetch written in C. Currently works only on mac, I'll try to bring it on the BSDs and Solaris family. It is on macOS even 20 times faster than neofetch. Most of code is new.",
         textpl:'to fork kopii neofetch\'a napisanej w C. Obecnie działa tylko na macu, ale postaram się przeportować to też na BSD i Solarisy. Na macOS\'ie jest około 20 razy szybszy niż neofetch. Większość kodu jest nowa.',
-        github:'https://gitlab.com/DesantBucie/paleofetch-mac',
+        gitlab:'https://gitlab.com/DesantBucie/paleofetch-mac',
     },
     {   
         id:2,
         image: easy_vim,
-        header:'Easy-Vim',
+        header:'easy.nvim',
         text:'is currently just a prototype and concept of what I would like achieve, that is, easy to set and use vim completion almost or completly without additional dependecies. If you want something already working then use <a href="https://github.com/DesantBucie/Verde">Verde</a> (It works very well with macvim.) or <a href="https://github.com/DesantBucie/exrc">Exrc</a> for vi.',
         textpl:'',
-        github:'https://github.com/DesantBucie/easy-vim',
+        github:'https://github.com/DesantBucie/easy.nvim',
     },
     {   
         id:3,
@@ -42,5 +43,13 @@ export const SliderContent = [
         text:"is old learning project, that is quite abandoned that I'm sure has many mistakes, and outdates, but it's example of me working with data from api.",
         textpl:'',
         github:'https://github.com/DesantBucie/antila',
+    },
+    {   
+        id:4,
+        image: libspl,
+        header:'libspl',
+        text:"is old learning project, that is quite abandoned that I'm sure has many mistakes, and outdates, but it's example of me working with data from api.",
+        textpl:'',
+        gitlab:'https://gitlab.com/DesantBucie/libspl',
     },
 ];

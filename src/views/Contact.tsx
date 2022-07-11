@@ -21,7 +21,7 @@ const Contact: FC<props> = (props) => {
                         </a>
                         
                     </h3>
-                    <h3><a href="https://github.com/DesantBucie/DesantBucie/issues"> <FaGithub/> {props.language ? 'Make issue' : 'Stwórz \'issue\''}</a></h3>
+                    <h3><a href="https://github.com/DesantBucie/DesantBucie/issues"> <FaGithub/> {props.language ? 'Make issue' : 'Github'}</a></h3>
             </section>
         </div>
     );

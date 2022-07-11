@@ -6,6 +6,8 @@
     align-items: center;
     background: #eee;
     transition: .5s;
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
     & p {
         font-size:1.2rem;
     }
@@ -20,7 +22,7 @@
         padding-left:2em;
         &--polish {
             display: block;
-            text-align: left;   
+            text-align: left;
             white-space: nowrap;
             width:min-content;
             &::after{
@@ -69,11 +71,11 @@
             &::after{
                 width: 150px;
                 top:30px;;
-              
+
             }
             &--polish {
                 &::after{
-                    width:180px;
+                    width:160px;
                     left:-10px;
                     top:30px;
                 }

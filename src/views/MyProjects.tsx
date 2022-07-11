@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { MobileProjects } from 'components/my-projects/MobileProjects';
+import { DesktopProjects } from 'components/my-projects/DesktopProjects';
 
 import './MyProjects.scss';
 
@@ -17,7 +18,11 @@ const MyProjects: FC<props> = (props) => {
                 :
                 <h2 className="my-projects--polish">Moje projekty</h2>
             }
+            { props.width > 1023 ?
+                <DesktopProjects />
+                :
                 <MobileProjects />
+            }
         </section>
     );
 }
